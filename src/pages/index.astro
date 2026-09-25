@@ -5,31 +5,47 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 <BaseLayout title="Home">
   <!-- Hero Section -->
   <section class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
-    <div class="max-w-4xl mx-auto text-center">
-      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 dark:text-slate-100 mb-6 animate-fade-in-up">
-        Yassine Nait Ider
-      </h1>
-      <p class="text-2xl sm:text-3xl text-blue-600 dark:text-blue-400 font-semibold mb-8 animate-fade-in-up delay-100">
-        AI & Data Engineer
-      </p>
-      <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-400 mb-12 max-w-2xl mx-auto animate-fade-in-up delay-200">
-        4th-year Computer Engineering student specializing in Artificial Intelligence, Data, and Cloud Computing. Building practical AI and data-driven solutions.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-300">
-        <a href="/projects" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors text-center transform hover:scale-105 transition-transform">
-          View Projects
-        </a>
-        <a href="/about" class="px-8 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-900 dark:text-slate-100 font-semibold rounded-lg transition-colors text-center transform hover:scale-105 transition-transform">
-          About Me
-        </a>
-      </div>
-      <div class="flex justify-center gap-6 mt-8 animate-fade-in-up delay-300">
-        <a href="https://github.com/NAITIDER" target="_blank" rel="noopener noreferrer" class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
-          GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/yassine-nait-ider-646912294/" target="_blank" rel="noopener noreferrer" class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
-          LinkedIn
-        </a>
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <div class="flex-1 text-center lg:text-left">
+          <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 dark:text-slate-100 mb-6 animate-fade-in-up">
+            Yassine Nait Ider
+          </h1>
+          <p class="text-2xl sm:text-3xl text-blue-600 dark:text-blue-400 font-semibold mb-8 animate-fade-in-up delay-100">
+            AI & Data Engineer
+          </p>
+          <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-400 mb-12 max-w-2xl mx-auto lg:mx-0 animate-fade-in-up delay-200">
+            4th-year Computer Engineering student specializing in Artificial Intelligence, Data, and Cloud Computing. Building practical AI and data-driven solutions.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up delay-300">
+            <a href="/projects" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors text-center transform hover:scale-105 transition-transform">
+              View Projects
+            </a>
+            <a href="/about" class="px-8 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-900 dark:text-slate-100 font-semibold rounded-lg transition-colors text-center transform hover:scale-105 transition-transform">
+              About Me
+            </a>
+          </div>
+          <div class="flex justify-center lg:justify-start gap-6 mt-8 animate-fade-in-up delay-300">
+            <a href="https://github.com/NAITIDER" target="_blank" rel="noopener noreferrer" class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/yassine-nait-ider-646912294/" target="_blank" rel="noopener noreferrer" class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+        <div class="flex-1 flex justify-center lg:justify-end animate-fade-in-up delay-200">
+          <div class="relative">
+            <div class="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-blue-600 dark:border-blue-400 shadow-2xl">
+              <img src="/profile.jpg" alt="Yassine Nait Ider" class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-blue-600 dark:bg-blue-400 rounded-full flex items-center justify-center shadow-lg">
+              <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
