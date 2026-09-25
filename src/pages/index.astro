@@ -1,17 +1,112 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Home">
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 dark:text-slate-100 mb-6 animate-fade-in-up">
+        Yassine Nait Ider
+      </h1>
+      <p class="text-2xl sm:text-3xl text-blue-600 dark:text-blue-400 font-semibold mb-8 animate-fade-in-up delay-100">
+        AI & Data Engineer
+      </p>
+      <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-400 mb-12 max-w-2xl mx-auto animate-fade-in-up delay-200">
+        4th-year Computer Engineering student specializing in Artificial Intelligence, Data, and Cloud Computing. Building practical AI and data-driven solutions.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-300">
+        <a href="/projects" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors text-center transform hover:scale-105 transition-transform">
+          View Projects
+        </a>
+        <a href="/about" class="px-8 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-900 dark:text-slate-100 font-semibold rounded-lg transition-colors text-center transform hover:scale-105 transition-transform">
+          About Me
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Preview -->
+  <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-900">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-12 text-center">
+        Featured Projects
+      </h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-600 transition-all transform hover:scale-105 hover:shadow-lg">
+          <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-3">AI Predictive Maintenance System</h3>
+          <p class="text-slate-600 dark:text-slate-400 mb-4">ML-based predictive maintenance for industrial engines using NASA C-MAPSS dataset with FastAPI and PostgreSQL.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Python</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">ML</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">FastAPI</span>
+          </div>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-xl p-6 border border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-600 transition-all transform hover:scale-105 hover:shadow-lg">
+          <h3 class="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-3">RAG / AI Agent System</h3>
+          <p class="text-slate-600 dark:text-slate-400 mb-4">Retrieval-Augmented Generation system for extracting and reasoning over company information using LLMs and vector search.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">RAG</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">LLMs</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Vector Search</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <a href="/projects" class="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-semibold">
+          View All Projects →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="py-20 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-12 text-center">
+        Technical Skills
+      </h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-lg p-6 border border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-600 transition-all transform hover:scale-105 hover:shadow-md">
+          <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-3">Artificial Intelligence</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm">Machine Learning, Deep Learning, RAG Systems, AI Agents</p>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-lg p-6 border border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-600 transition-all transform hover:scale-105 hover:shadow-md">
+          <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-3">Data Engineering</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm">Data Analysis, ETL Pipelines, PostgreSQL, SQLAlchemy</p>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-lg p-6 border border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-600 transition-all transform hover:scale-105 hover:shadow-md">
+          <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-3">Backend Development</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm">FastAPI, Django, REST APIs, System Design</p>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-lg p-6 border border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-600 transition-all transform hover:scale-105 hover:shadow-md">
+          <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-3">Cloud Computing</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm">Cloud Architecture, Scalable Systems, DevOps</p>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-lg p-6 border border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-600 transition-all transform hover:scale-105 hover:shadow-md">
+          <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-3">Programming</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm">Python, SQL, TypeScript, Git</p>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-lg p-6 border border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-600 transition-all transform hover:scale-105 hover:shadow-md">
+          <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-3">Tools & Frameworks</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm">Scikit-learn, Pandas, NumPy, Streamlit, Docker</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-100 dark:bg-slate-900">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-6">
+        Let's Connect
+      </h2>
+      <p class="text-lg text-slate-600 dark:text-slate-400 mb-8">
+        I'm always interested in discussing AI, data engineering, and new opportunities.
+      </p>
+      <a href="mailto:contact@yassinenaitider.com" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors inline-block">
+        Get In Touch
+      </a>
+    </div>
+  </section>
+</BaseLayout>

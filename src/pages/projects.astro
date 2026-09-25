@@ -1,0 +1,227 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Projects">
+  <section class="py-20 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      <h1 class="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-slate-100 mb-4 animate-fade-in-up">
+        Projects
+      </h1>
+      <p class="text-xl text-slate-600 dark:text-slate-400 mb-12 animate-fade-in-up delay-100">
+        A selection of my technical projects in AI, data engineering, and backend development.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- AI Predictive Maintenance System -->
+        <div class="bg-white dark:bg-slate-800 rounded-xl p-8 border border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-600 transition-all shadow-sm hover:shadow-md">
+          <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4">
+            AI Predictive Maintenance System
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 mb-6">
+            An AI-based predictive maintenance system for industrial/aircraft engines using the NASA C-MAPSS FD001 dataset. The system predicts Remaining Useful Life (RUL) to enable proactive maintenance decisions.
+          </p>
+
+          <div class="mb-6">
+            <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-2">Problem</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">
+              Unexpected equipment failures cause significant downtime and costs. Traditional time-based maintenance is inefficient. This project aims to predict equipment failure before it occurs.
+            </p>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-2">Solution</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">
+              Built a Random Forest model trained on sensor data from aircraft engines. The system provides RUL predictions and maintenance recommendations through a REST API.
+            </p>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-2">Key Features</h3>
+            <ul class="text-slate-600 dark:text-slate-400 text-sm space-y-1">
+              <li>• Data preprocessing and feature engineering from raw sensor data</li>
+              <li>• Random Forest regression for RUL prediction</li>
+              <li>• FastAPI backend with PostgreSQL database</li>
+              <li>• SQLAlchemy ORM for data management</li>
+              <li>• Maintenance decision support system</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Python</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Machine Learning</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Random Forest</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">FastAPI</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">PostgreSQL</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">SQLAlchemy</span>
+          </div>
+
+          <div class="flex gap-4">
+            <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-semibold text-sm">
+              GitHub →
+            </a>
+            <a href="#" class="text-slate-600 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300 font-semibold text-sm">
+              Demo →
+            </a>
+          </div>
+        </div>
+
+        <!-- Employee Performance Prediction -->
+        <div class="bg-white dark:bg-slate-800 rounded-xl p-8 border border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-600 transition-all shadow-sm hover:shadow-md">
+          <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4">
+            Employee Performance Prediction
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 mb-6">
+            An AI application for predicting employee performance using machine learning. The system helps organizations identify high-potential employees and areas for development.
+          </p>
+
+          <div class="mb-6">
+            <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-2">Problem</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">
+              Organizations struggle to objectively assess employee performance and identify talent early. Traditional reviews are subjective and infrequent.
+            </p>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-2">Solution</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">
+              Developed a Random Forest classifier that predicts performance categories based on employee attributes. Built an interactive Streamlit interface for easy use by HR teams.
+            </p>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-2">Key Features</h3>
+            <ul class="text-slate-600 dark:text-slate-400 text-sm space-y-1">
+              <li>• Feature engineering from employee data</li>
+              <li>• Random Forest classification model</li>
+              <li>• Interactive Streamlit dashboard</li>
+              <li>• SQLite database for data storage</li>
+              <li>• Model performance metrics and visualizations</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Python</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Machine Learning</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Random Forest</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Streamlit</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">SQLite</span>
+          </div>
+
+          <div class="flex gap-4">
+            <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-semibold text-sm">
+              GitHub →
+            </a>
+            <a href="#" class="text-slate-600 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300 font-semibold text-sm">
+              Demo →
+            </a>
+          </div>
+        </div>
+
+        <!-- Geo-Economic Intelligence Platform -->
+        <div class="bg-white dark:bg-slate-800 rounded-xl p-8 border border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-600 transition-all shadow-sm hover:shadow-md">
+          <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4">
+            Geo-Economic Intelligence Platform
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 mb-6">
+            An AI-first platform for analyzing economic patterns across geographic zones. The platform helps identify economic trends, opportunities, and risks across different regions.
+          </p>
+
+          <div class="mb-6">
+            <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-2">Problem</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">
+              Economic data is complex and geographically dispersed. Organizations need tools to analyze patterns across regions to make informed strategic decisions.
+            </p>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-2">Solution</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">
+              Built a Django-based platform that aggregates economic data, applies ML analysis, and provides insights through interactive dashboards and reports.
+            </p>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-2">Key Features</h3>
+            <ul class="text-slate-600 dark:text-slate-400 text-sm space-y-1">
+              <li>• Data aggregation from multiple economic sources</li>
+              <li>• Geographic data analysis and visualization</li>
+              <li>• ML-based pattern recognition</li>
+              <li>• Django web framework with PostgreSQL</li>
+              <li>• Interactive data dashboards</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Django</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Python</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Machine Learning</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">PostgreSQL</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Data Analysis</span>
+          </div>
+
+          <div class="flex gap-4">
+            <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-semibold text-sm">
+              GitHub →
+            </a>
+            <a href="#" class="text-slate-600 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300 font-semibold text-sm">
+              Demo →
+            </a>
+          </div>
+        </div>
+
+        <!-- RAG / AI Agent Project -->
+        <div class="bg-white dark:bg-slate-800 rounded-xl p-8 border border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-600 transition-all shadow-sm hover:shadow-md">
+          <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4">
+            RAG / AI Agent System
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 mb-6">
+            A Retrieval-Augmented Generation system capable of extracting and reasoning over company information. The system combines LLMs with vector search for accurate, context-aware responses.
+          </p>
+
+          <div class="mb-6">
+            <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-2">Problem</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">
+              General-purpose LLMs lack specific company knowledge and can produce inaccurate information. Organizations need AI systems that understand their specific context and data.
+            </p>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-2">Solution</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">
+              Built a RAG system that indexes company documents, retrieves relevant context using vector search, and generates accurate responses using LLMs with proper citation.
+            </p>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-2">Key Features</h3>
+            <ul class="text-slate-600 dark:text-slate-400 text-sm space-y-1">
+              <li>• Document ingestion and chunking pipeline</li>
+              <li>• Vector embeddings and similarity search</li>
+              <li>• LLM integration for response generation</li>
+              <li>• Context-aware query processing</li>
+              <li>• Source citation and transparency</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Python</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">RAG</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">LLMs</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Embeddings</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">Vector Search</span>
+          </div>
+
+          <div class="flex gap-4">
+            <a href="#" class="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-semibold text-sm">
+              GitHub →
+            </a>
+            <a href="#" class="text-slate-600 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300 font-semibold text-sm">
+              Demo →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
